@@ -1,6 +1,10 @@
- # EX NO:06 Series Queues with infinite capacity - Open Jackson Network
-Name:Punniyakotti.M
-Ref no:24006503
+ # Series Queues with infinite capacity - Open Jackson Network
+EX.NO:6
+
+NAME: S.R.Amiritha
+REGISTER NO:24900271
+
+
 ## Aim :
 To find (a) average number of materials in the system (b) average number of materials in the each conveyor of (c) waiting time of each material in the system (d) waiting time of each material in each conveyor, if the arrival  of materials follow Poisson process with the mean interval time 12 seconds, service time of  lathe machine in series follow exponential distribution  with service time  1 second, 1.5 seconds and 1.3 seconds respectively and average service time of robot is 7 seconds.
 
@@ -18,13 +22,12 @@ Visual components and Python
 
 
 ## Experiment:
-![image](https://github.com/user-attachments/assets/7ced5c6f-0966-431c-a143-91e08a1dfe7f)
+![Screenshot 2024-12-15 114736](https://github.com/user-attachments/assets/2a3c1b55-01c6-43fa-bd6c-daa0af3fdd1a)
 
-![394351729-826a86bc-0c6f-4175-b8ab-ca9914a870b1](https://github.com/user-attachments/assets/84258c73-3089-42b1-a870-f4685ed08224)
 
 
 ## Program
-```py
+```
 arr_time=float(input("Enter the mean inter arrival time of objects from Feeder (in secs): "))
 ser_time1=float(input("Enter the mean  inter service time of Lathe Machine 1 (in secs) :  "))
 ser_time2=float(input("Enter the mean  inter service time of Lathe Machine 2 (in secs) :  "))
@@ -63,16 +66,29 @@ else:
     print("Warning! Objects Over flow will happen in the conveyor")
 print("----------------------------------------------------------------------")
 ```
+
 ## Output
-
-
-![394352262-9f537fd6-4914-4e55-8234-11ccbe22fa47](https://github.com/user-attachments/assets/6e4baf27-8472-4887-9427-d35c4c882807)
-
-
-
-
+```
+Enter the mean inter arrival time of objects from Feeder (in secs): 12
+Enter the mean  inter service time of Lathe Machine 1 (in secs) :  3.3
+Enter the mean  inter service time of Lathe Machine 2 (in secs) :  3
+Enter the mean  inter service time of Lathe Machine 3 (in secs) :  6.1
+Enter the Additional time taken for the Robot (in secs) :  5
+-----------------------------------------------------------------------
+Series Queues with infinite capacity- Open Jackson Network
+-----------------------------------------------------------------------
+Average number of objects in the system S1 : 2.24 
+Average number of objects in the system S2 : 2.00 
+Average number of objects in the system S3 : 12.33 
+Average number of objects in the overall system    : 16.58 
+Average number of objects in the conveyor S1  :  1.55 
+Average number of objects in the conveyor S2  :  1.33 
+Average number of objects in the conveyor S3  :  11.41 
+Average waiting time of an object in the conveyor S1 : 18.62 secs
+Average waiting time of an object in the conveyor S2 : 16.00 secs
+Average waiting time of an object in the conveyor S3 : 136.90 secs
+----------------------------------------------------------------------
+```
 
 ## Result
-The average number of material in the sysytem and in the conveyor and waiting time are successfully found.
-
-
+The average number of material in the system and in the conveyor and waiting time are successfully found
